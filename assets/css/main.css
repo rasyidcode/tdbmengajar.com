@@ -1,0 +1,360 @@
+/* add background */
+.add-background {
+    background-color: #03478D !important;
+}
+.add-background a.nav-link,
+.add-background h3 {
+  color: #fff !important;
+}
+
+/* main_nav */
+nav#main-nav {
+    font-family: "Roboto", sans-serif;
+    transition: 0.5s;
+    background: #fff;
+    border-bottom: 1px solid #E0E0E0;
+}
+nav#main-nav .navbar-brand h3 span {
+    font-size: 0.8em;
+}
+nav#main-nav .navbar-toggler {
+    background: none;
+    border: none;
+}
+nav#main-nav div.d-flex img.img-fluid {
+    width: 60px;
+    height: 60px;
+    transition: 0.5s;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    nav#main-nav div.d-flex img.img-fluid {
+        width: 50px;
+        height: 50px;
+    }
+}
+nav#main-nav div.d-flex h3 {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #212121;
+    margin-top: 10px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    nav#main-nav div.d-flex h3 {
+        font-size: 0.8rem;
+    }
+}
+nav#main-nav .animated-toggler {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+} 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    nav#main-nav .animated-toggler {
+        width: 25px;
+        height: 15px;
+        padding: 1rem;
+    }
+}
+nav#main-nav .animated-toggler span {
+    background: #E0E0E0;
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+}
+nav#main-nav .animated-toggler span:nth-child(1) {
+    top: 0px;
+}
+nav#main-nav .animated-toggler span:nth-child(2),
+nav#main-nav .animated-toggler span:nth-child(3) {
+    top: 10px;
+}
+nav#main-nav .animated-toggler span:nth-child(4) {
+    top: 20px;
+}
+nav#main-nav .animated-toggler.open span:nth-child(1) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+}
+nav#main-nav .animated-toggler.open span:nth-child(2) {
+    transform: rotate(45deg);
+}
+nav#main-nav .animated-toggler.open span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+nav#main-nav .animated-toggler.open span:nth-child(4) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+}
+nav#main-nav ul li a.nav-link {
+    color: #212121;
+    font-weight: bold;
+    transition: 0.5s;
+    font-size: 0.85rem;
+}
+nav#main-nav ul li a.nav-link:hover {
+    color: #FDD835;
+}
+nav#main-nav ul li .dropdown-menu {
+    margin-top: 20px;
+}
+nav#main-nav ul li .dropdown-menu > a.dropdown-item {
+    color: #0D1321 !important;
+    transition: 0.3s;
+    font-size: 1.1em;
+}
+nav#main-nav ul li .dropdown-menu > a.dropdown-item:hover {
+    color: #FFEB3B !important;
+    background: transparent !important;
+}
+nav#main-nav ul li.active a.nav-link {
+    color: #E8C547 !important;
+}
+.navbar-scroll {
+    margin-top: 0px !important;
+    background: #03478D !important;
+    border-bottom: none !important;
+}  
+.navbar-scroll a.nav-link {
+    color: #fff !important;
+}
+.navbar-scroll a.nav-link:hover {
+    color: #FDD835 !important;
+}
+.navbar-scroll h3 {
+    color: #fff !important;
+} 
+.navbar-scroll li.active a.nav-link:not(a[href="#home"]) {
+    color: #E8C547 !important;
+}
+
+/* Header */
+header#welcome {
+    position: relative;
+    background-color: #fff;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    header#welcome{
+        height: calc(100vh + 100px);
+    }
+}  
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    header#welcome .col-sm-12 {
+        text-align: center;
+    }
+}
+header#welcome .container {
+    margin: auto;
+    position: relative;
+}  
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    header#welcome .container {
+        padding-bottom: 100px;
+    }
+}  
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    header#welcome h1 {
+        font-size: 2.5rem;
+    }
+}  
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    header#welcome h2 {
+        font-size: 1.5rem;
+    }
+}
+header#welcome img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 90%;
+}  
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    header#welcome img {
+        height: 40%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+}  
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    header#welcome img {
+        height: 60%;
+    }
+}  
+@media only screen and (min-width: 769px) and (max-width: 1124px) {
+    header#welcome img {
+        height: 60%;
+    }
+}  
+header#welcome h2 {
+    font-weight: 300;
+}
+header#welcome .btn-contact-us {
+    background: #03478D;
+    border-color: #03478D;
+    color: #fff;
+    border-width: 2px;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: 0.5s;
+}  
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    header#welcome .btn-contact-us {
+        font-size: 0.7rem;
+    }
+}  
+header#welcome .btn-contact-us:hover {
+    background: #fff;
+    color: #001F54;
+    border-width: 2px;
+}
+
+/* home */
+section#home {
+    font-family: "Roboto", sans-serif;
+}
+section#home .home-second-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: #03478D;
+    opacity: 0.8;
+}
+section#home .col-md-7.py-5 {
+    position: relative;
+    background: #03478D;
+    height: 500px;
+}
+@media only screen and (min-width: 1224px) {
+    section#home .col-md-7.py-5 {
+        height: auto;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    section#home .col-md-7.py-5 {
+        background: url(/assets/images/graduation3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        height: auto;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    section#home .col-md-7.py-5 {
+        height: auto;
+    }
+}
+section#home .els-home-img {
+    background: url(/assets/images/graduation3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-top: 1rem solid #03478D;
+    border-bottom: 1rem solid #03478D;
+    border-left: 1rem solid #03478D;
+}
+@media only screen and (min-width: 769px) and (max-width: 1124px) {
+    section#home .els-home-img {
+        border-top: 0.6rem solid #03478D;
+        border-bottom: 0.6rem solid #03478D;
+        border-left: 0.6rem solid #03478D;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    section#home .els-home-img {
+        border-bottom: none;
+        border-left: none;
+        border-top: none;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    section#home .els-home-img {
+        border-top: 0.6rem solid #03478D;
+        border-bottom: 0.6rem solid #03478D;
+        border-left: 0.6rem solid #03478D;
+    }
+}
+section#home .col-md-7.py-5 h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 2.7em;
+    position: relative;
+}
+@media only screen and (min-width: 769px) and (max-width: 1124px) {
+    section#home .col-md-7.py-5 h1 {
+        font-size: 2rem;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    section#home .col-md-7.py-5 h1 {
+        font-size: 1.5rem;
+        margin-bottom: 32px !important;
+    }
+}
+section#home .col-md-7.py-5 h1::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: calc(50% - 80px);
+    background: #FFAF1F;
+    height: 5px;
+    width: 160px;
+    border-radius: 12px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    section#home .col-md-7.py-5 h1::after {
+        width: 80px;
+        left: calc(50% - 40px);
+        height: 2.5px;
+        bottom: -20px;
+    }
+}
+section#home .col-md-7.py-5 p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+    color: #ccc;
+    position: relative;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    section#home .col-md-7.py-5 p {
+        font-size: 1em;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    section#home .col-md-7.py-5 p {
+        font-size: 1em;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1124px) {
+    section#home .col-md-7.py-5 p {
+        font-size: 1em;
+    }
+}
+@media only screen and (min-width: 1224px) {
+    section#home .col-md-7.py-5 p {
+        font-size: 1.3em;
+    }
+}
